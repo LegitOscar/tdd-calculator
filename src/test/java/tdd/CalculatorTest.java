@@ -37,7 +37,22 @@ class CalculatorTest {
         assertEquals(expected,actual);
     }
 
+    @Test
+    void TestNumberString(){
+        int expected = 6;
+        int actual = instance.add("1,2,3");
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void TestArray() {
+        int expected = 6;
+        int actual = instance.add(new int[]{1, 2, 3});
+        assertEquals(expected, actual);
+    }
+
+    }
 
 
 
-}
+
